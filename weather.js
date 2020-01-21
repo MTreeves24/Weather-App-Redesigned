@@ -38,13 +38,13 @@ async function getPosSuccess(pos){
     changeF.addEventListener("click",() => {
         changeF.classList.add("button-active")
         changeC.classList.remove("button-active")
-        unit.innerHTML = "&degF"
+        let unit = document.querySelector(".unit").innerHTML = "&degF"
         document.querySelector(".temp").innerHTML = Math.floor(showData.main.temp * 9/5 + 32);
     })
     changeC.addEventListener("click",() => {
         changeC.classList.add("button-active")
         changeF.classList.remove("button-active")
-        unit.innerHTML = "&degC"
+        let unit = document.querySelector(".unit").innerHTML = "&degC"
         document.querySelector(".temp").innerHTML = Math.round(showData.main.temp);
     })
         //****************************************************************   
