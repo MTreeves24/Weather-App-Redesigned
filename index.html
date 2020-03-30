@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>WeatherApp</title>
-    <link rel="stylesheet" type="text/css" href="weather.css">
-    <link rel="stylesheet" type="text/css" href="css/weather-icons.min.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="weather.css" />
+    <link rel="stylesheet" type="text/css" href="css/weather-icons.min.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">What's the weather like?</div>
+      <div class="location">Loading...</div>
+      <div class="flex">
+        <div class="flex item">
+          <div class="temp"></div>
+          <span class="unit"></span>
+        </div>
+        <div class="summary item"></div>
+        <div class="wind-speed item"></div>
+        <div class="cloud-cover item"></div>
+      </div>
 
-<div class="container">
-<div class="title">What's the weather like?</div>
-<div class="location">Loading...</div>
-<div class="flex">
+      <div class="icon"><p></p></div>
 
-    <div class="flex item"><div class="temp"></div><span class="unit"></span></div>
-    <div class="summary item"></div>
-    <div class="wind-speed item"></div>
-    <div class="cloud-cover item"></div>
-</div>
+      <div class="change-units">
+        <button class="changeF change">&degF</button>
+        <button class="changeC change button-active">&degC</button>
+      </div>
+    </div>
 
-<div class="icon"><p></p></div>
-
-<div class="change-units">
-<button class="changeF change">&degF</button>
-<button class="changeC change button-active">&degC</button>
-</div>
-</div>
-
-<script type="text/javascript" src="weather.js"></script>
-<script>src="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css"</script>
-</body>
+    <script type="text/javascript" src="weather.js"></script>
+    <script>
+      src =
+        "https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css";
+    </script>
+  </body>
 </html>
